@@ -11,7 +11,7 @@ function Users() {
     const cls = searchParams.get("class");
 
     useEffect(() => {
-        axios("/data.json").then((response) => {
+        axios("/react-router/data.json").then((response) => {
             setData(response.data);
         });
     }, []);
