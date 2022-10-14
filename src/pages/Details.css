@@ -1,0 +1,37 @@
+.details .title {
+    padding: 10px 8px;
+    margin-bottom: 5px;
+    background: rgb(210, 225, 237);
+}
+
+.details .body {
+    font-size: 14px;
+    color: slategrey;
+}
+
+.details button {
+    margin-top: 5px;
+}
+
+.sub-menu {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sub-menu a {
+    text-decoration: none;
+    color: white;
+    margin: 4px;
+}
+
+.sub-menu span {
+    padding: 8px;
+    display: inline-block;
+    background: darkgrey;
+}
+
+.sub-menu .active span {
+    background: rgb(12, 48, 109);
+}
+.details-body{
+    margin-bottom: 20px;;
+}

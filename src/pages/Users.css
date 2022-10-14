@@ -1,0 +1,26 @@
+.users {
+    font-size: 14px;
+}
+
+.users .users-item {
+    border: 1px solid lightgrey;
+    padding: 16px 12px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    background: rgb(210, 225, 237);
+}
+
+.users .descr {
+    font-size: 12px;
+    color:slategrey;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.options .label{
+    margin-right: 5px;
+}
