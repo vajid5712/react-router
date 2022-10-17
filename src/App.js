@@ -10,21 +10,17 @@ import Details from "./pages/Details";
 import Marks from "./pages/Marks";
 import Sports from "./pages/Sports";
 import Remarks from "./pages/Remarks";
+import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
-
-const Users = React.lazy(() => {
-    return import("./pages/Users");
-});
+import Users from "./pages/Users";
 
 function App() {
     return (
         <BrowserRouter basename="react-router">
-            <div>
-                <Header />
-            </div>
-            <Suspense fallback={<div>Loading...</div>}>
-                <Routes>
-                    <Route path="/" element={<Home />} />
+            <Routes>
+                <Route path="login" element={<Login />} />
+                <Route path="/" element={<Header />}>
+                    <Route index element={<Home />} />
                     <Route path="usage" element={<Usage />} />
                     <Route path="settings" element={<Settings />} />
                     <Route path="users">
@@ -36,8 +32,8 @@ function App() {
                         </Route>
                     </Route>
                     <Route path="*" element={<NotFound />} />
-                </Routes>
-            </Suspense>
+                </Route>
+            </Routes>
         </BrowserRouter>
     );
 }
